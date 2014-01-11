@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Data Analytics" %></title>
+     <%= favicon_link_tag '/assets/favicon.ico', :rel => 'shortcut icon' %>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+
+  </head>
+
+  <body>
+  
+  <!-- Nav and Banner -->
+  <div  class="row page-wrap">
+    <div class="large-12 columns">
+
+      <div class="row">
+       <!-- Navigation -->
+        <div class="large-12 columns">
+            <nav class="top-bar" data-topbar >
+
+              <ul class="title-area">
+                <!-- Title Area -->
+                <li class="name">
+                  
+                </li>
+                <li class="toggle-topbar menu-icon">
+                  <a href="#"><span>menu</span></a>
+                </li>
+              </ul>
+
+     
+              <section class="top-bar-section">
+                <ul class="left">
+                  <li class="divider"></li>
+                    <li>
+                      <h3>
+                          <%= link_to "Data Analytics", root_path %>
+                      </h3>
+                    </li>
+              
+                  <li class="divider"></li>
+                  <li>
+                    <h3 style="font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;">
+                      <%= link_to "Reviews", reviews_path %>
+                    </h3>
+                  </li>
+                 
+                  <li class="divider"></li>
+                  <li>
+                    <h3 style="font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;">
+                      <a href="">link1</a>
+                    </h3>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <h3 style="font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;">
+                      <a href="">link1</a>
+                    </h3>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <h3 style="font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;">
+                      <a href="">link1</a>
+                    </h3>
+                  </li>
+                </ul>
+                
+              </section>
+            </nav>
+            <!-- end Navigation -->
+        </div>
+      </div>
+ 
+ 
+  <div class="row">
+    <div class="large-12 columns">
+ 
+     <!-- Desktop Slider -->
+ 
+      <div class="hide-for-small">
+        <div id="featured">
+             <span><p align="center" style="font-size:80px;margin:100px ;font-family: inherit;">Data Analytics</p></span>
+          </div>
+        </div>
+        <!-- End Desktop Slider -->
+ 
+        <!-- Mobile Header -->
+        <div class="row">
+          <div class="small-12 show-for-small"><br>
+            <h3 align="center" style="font-size:30px;margin:50px;">Data Analytics</h3>
+          </div>
+        </div>
+        <!-- End Mobile Header -->
+      </div>
+
+  <br>
+ 
+
+    <div class="large-12 columns">
+      <div class="row">
+         <div class="large-12 columns" align="center">
+          <!-- Thumbnails -->
+            <%= yield %>
+          <!-- End Thumbnails -->
+         </div>
+      </div>
+    </div>
+
+ 
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+        <!-- Content -->
+ 
+          <div class="large-6 columns">
+            <div class="panel radius">
+   
+              <div class="row">
+                
+                <div class="large-6 small-6 columns"> 
+                  <h4>Header</h4><hr/>
+                  <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+                  </h5>
+                  <div class="show-for-small" align="center">
+                    <a href="#" class="small radius button">Call To Action!</a><br>
+                    <a href="#" class="small radius button">Call To Action!</a>
+                  </div>
+                </div>
+                
+                <div class="large-6 small-6 columns">
+                  <p>
+                    Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
+                  </p>
+                </div>
+     
+              </div>
+            </div>
+          </div>
+ 
+          <div class="large-4 columns hide-for-small">
+            <h4>Get In Touch!</h4><hr/>
+ 
+              <a class="large button expand" href="#">
+                Call To Action!
+              </a>
+     
+              <a class="large button expand" href="#">
+                Call To Action!
+              </a>
+          </div>
+          <!-- End Content -->
+ 
+      </div>
+    </div>
+  </div>
+</div> 
+    <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr>
+      <div class="row">
+        <div class="large-12 columns">
+          <p align="center">© Copyright Data Analytics.</p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  </div>  
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+
+
+
+
+<style type="text/css">
+  .page-wrap
+     {
+        margin: 25px auto;
+        border-radius: 3px;
+        background: none repeat scroll 0% 0% rgb(255, 255, 255);
+        box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.4);
+      }
+  .top-bar
+     {
+        background-color: #f8f8f8;
+        padding: 10px 0px 2px;
+       height: 75px;
+       width: 100%;
+      }
+  .body {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+ .top-bar {
+        height:75px;
+      }
+      .top-bar .name{
+            height:65px;
+
+      }
+      .top-bar-section ul{
+          background: #fff;
+      }
+      .top-bar-section ul li a{
+          color: #585858;
+          font-size: 16px;
+      }
+      .top-bar-section ul li a:hover{
+          color: #73c20e;
+      }
+      .top-bar .toggle-topbar.menu-icon a:hover{
+          background: #fff;
+      }
+</style>
+
+ 
